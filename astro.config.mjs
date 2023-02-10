@@ -9,7 +9,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astro-modern-personal-website.netlify.app',
+  site: 'https://rrreeeyyy.com',
   integrations: [mdx(), sitemap(), tailwind(), react()],
   vite: {
     plugins: [yaml()]
