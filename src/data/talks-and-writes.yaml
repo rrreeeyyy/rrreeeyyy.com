@@ -1,0 +1,46 @@
+- url: https://speakerdeck.com/rrreeeyyy/sre-walk-through-procedure
+  title: 'SRE NEXT 2022: SRE の歩き方・進め方'
+- url: https://speakerdeck.com/rrreeeyyy/cookpad-tech-kitchen-service-embedded-sres
+  title: 'Cookpad Tech Kitchen #24: 「信頼性」を保ちつつ大規模サービスをリニューアルする'
+- url: https://speakerdeck.com/rrreeeyyy/cookpad-and-prometheus
+  title: 'Prometheus Tokyo Meetup #2: Cookpad and Prometheus'
+- url: https://speakerdeck.com/rrreeeyyy/sre-lounge-8-cookpad-microservice-architecture-overview
+  title: 'SRE Lounge#8: Cookpad Microservice Architecture Overview'
+- url: https://gihyo.jp/magazine/wdpress/archive/2019/vol109
+  title: 'WEB+DB PRESS Vol.109: キャパシティプランニング'
+- url: https://gihyo.jp/magazine/wdpress/archive/2018/vol107
+  title: 'WEB+DB PRESS Vol.107: Envoyによるサービスメッシュの構築'
+- url: https://gihyo.jp/magazine/wdpress/archive/2018/vol105
+  title: 'WEB+DB PRESS Vol.105: Prometheusを用いた大規模システムのモニタリング'
+- url: https://speakerdeck.com/rrreeeyyy/a-survey-of-anomaly-detection-methodologies-for-web-system
+  title: '第3回 Web System Architecture 研究会: A survey of anomaly detection methodologies for web system'
+- url: https://speakerdeck.com/rrreeeyyy/wsa02-rrreeeyyy
+  title: '第2回 Web System Architecture 研究会: エンジニアリングをちゃんとやる あるいは 人類の平和 について'
+- url: https://speakerdeck.com/rrreeeyyy/ipsj-one-2018-rrreeeyyy
+  title: IPSJ-ONE 2018:「自立」したWebシステムを創る。自分の好きなことをする世界を目指して。
+- url: https://speakerdeck.com/rrreeeyyy/iot40-rrreeeyyy
+  title: '第 40 回インターネットと運用技術研究発表会: Web サービスの信頼性と運用の自動化について'
+- url: https://speakerdeck.com/rrreeeyyy/sre-at-cookpad
+  title: 'hbstudy#79: SRE at Cookpad'
+- url: https://speakerdeck.com/rrreeeyyy/introduction-to-prometheus-practice
+  title: 'hbstudy#79: Prometheus 実践入門'
+- url: https://speakerdeck.com/rrreeeyyy/jtf-2017-site-reliability-engineering
+  title: 'July Tech Festa 2017: Web サービスの信頼性を守るための取り組み'
+- url: https://techlife.cookpad.com/entry/timeseries-database-001
+  title: 'クックパッド開発者ブログ: 時系列データベースに関する基礎知識と時系列データの符号化方式について'
+- url: https://speakerdeck.com/rrreeeyyy/jtf2016-reinventing-the-wheel
+  title: 'July Tech Festa 2016: 今あえて試行錯誤しながら車輪の再発明をする意味'
+- url: https://speakerdeck.com/rrreeeyyy/osc-20141018-infra-as-code
+  title: 'オープンソースカンファレンス 2014 Tokyo/Fall: Infrastructure as Code の始め方'
+- url: https://speakerdeck.com/rrreeeyyy/gcpug-20150417-gcp-aws
+  title: 'GCPUG: Google Cloud Platform & Amazon Web Service'
+- url: https://qiita.com/rrreeeyyy/items/6bbd1f09c96e2af4a8ce
+  title: Hashicorp tools を支える技術
+- url: https://qiita.com/rrreeeyyy/items/90b3b1c73d22edc913ba
+  title: Kubernetes を使ってスケールする MySQL クラスタ Vitess を試す
+- url: https://speakerdeck.com/rrreeeyyy/consul-atlas-alerts
+  title: 'Hashicorp meetup: Consul in Atlas'
+- url: http://www.slideshare.net/rrreeeyyy117/ss-44072323
+  title: 'Monitoring Casual Talks #7: モニタリングシステムのこれまでとこれから'
+- url: https://qiita.com/rrreeeyyy/items/da5931ec0d2d858583cf
+  title: Google のコンテナ管理ツール Kubernetes を使ってみる
