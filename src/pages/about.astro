@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 import TalksAndWrites from "../data/talks-and-writes.yaml";
+import Socials from "../data/socials.yaml";
 ---
 
 <BaseLayout title="About">
@@ -11,11 +12,11 @@ import TalksAndWrites from "../data/talks-and-writes.yaml";
 
     <div class="py-2">
       <text class="text-lg">
-        Currently working as a CTO at
+        Currently working as CTO at
         <a class="underline" href="https://topotal.com/" target="_blank">
           Topotal, Inc
         </a>
-        , where we building a platform for SRE and DevOps.
+        , where we build platforms for SRE and DevOps.
       </text>
     </div>
 
@@ -55,17 +56,50 @@ import TalksAndWrites from "../data/talks-and-writes.yaml";
     </div>
 
     <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Podcast</div>
+    </div>
+
+    <div class="time-line-container grid gap-4 mb-10">
+      <TimeLineElement
+        title="e34.fm"
+        subtitle="From 2021/03 - Present"
+        desc="e34 is a podcast hosted by @deeeet and @rrreeeyyy. We talk about infrastructure, SRE, and platform engineering. The podcast name e34 stands for the number of 'e' in the host's account name."
+        link="https://e34.fm/"
+      />
+    </div>
+
+    <div class="mb-5">
       <div class="text-3xl w-full font-bold">Talks / Writes</div>
     </div>
 
-    {
-      TalksAndWrites.map((tw) => (
-        <li>
-          <a class="underline" href={tw.url} target="_blank">
-            {tw.title}
-          </a>
-        </li>
-      ))
-    }
+    <ul class="list-disc">
+      {
+        TalksAndWrites.map((tw) => (
+          <li>
+            <a class="underline" href={tw.url} target="_blank">
+              {tw.title}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <div class="mb-5 py-2">
+      <div class="mb-5 py-2">
+        <div class="text-3xl w-full font-bold">Accounts</div>
+      </div>
+      <ul class="list-disc md:columns-2 columns-2 mx-6">
+        {
+          Socials.map((s) => (
+            <li>
+              {s.name}:
+              <a class="underline" href={s.url} target="_blank">
+                {s.id}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
   </div>
 </BaseLayout>
