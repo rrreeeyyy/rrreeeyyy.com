@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 dayjs.extend(relativeTime);
 
 const RecentlyScrobbled = () => {
-
   const TRACK_LIMIT = 3;
   const LASTFM_USERNAME = import.meta.env.PUBLIC_LASTFM_USERNAME;
   const LASTFM_API_KEY = import.meta.env.PUBLIC_LASTFM_API_KEY;

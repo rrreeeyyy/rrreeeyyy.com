@@ -1,1 +1,71 @@
-index.astro
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+import TalksAndWrites from "../data/talks-and-writes.yaml";
+---
+
+<BaseLayout title="About">
+  <div class="pb-12 mt-5">
+    <div class="text-5xl font-bold">Hi, I'm @rrreeeyyy</div>
+    <div class="text-3xl py-4 font-bold">Software Engineer</div>
+
+    <div class="py-2">
+      <text class="text-lg">
+        Currently working as a CTO at
+        <a class="underline" href="https://topotal.com/" target="_blank">
+          Topotal, Inc
+        </a>
+        , where we building a platform for SRE and DevOps.
+      </text>
+    </div>
+
+    <div class="mb-5 py-2">
+      <div class="text-3xl w-full font-bold">Experience</div>
+    </div>
+
+    <div class="time-line-container mb-10">
+      <TimeLineElement
+        title="CTO @ Topotal, Inc"
+        subtitle="From 2021/06 - Present"
+      />
+      <TimeLineElement
+        title="Software Engineer (Site Reliability) @ Cookpad Inc"
+        subtitle="From 2017/01 to 2021/05"
+      />
+      <TimeLineElement
+        title="Operation Engineer / Software Engineer @ HEARTBEATS Corporation"
+        subtitle="From 2014/04 to 2016/12"
+      />
+      <TimeLineElement
+        title="Part-time Operation Engineer @ HEARTBEATS Corporation"
+        subtitle="From 2010/11 to 2014/03"
+      />
+    </div>
+
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Education</div>
+    </div>
+
+    <div class="time-line-container grid gap-4 mb-10">
+      <TimeLineElement
+        title="The University of Electro-Communications"
+        subtitle="From 2010/04 to 2014/03"
+        desc="Department of Computer and Network Engineering / Information and Communication Systems Program"
+      />
+    </div>
+
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Talks / Writes</div>
+    </div>
+
+    {
+      TalksAndWrites.map((tw) => (
+        <li>
+          <a class="underline" href={tw.url} target="_blank">
+            {tw.title}
+          </a>
+        </li>
+      ))
+    }
+  </div>
+</BaseLayout>
