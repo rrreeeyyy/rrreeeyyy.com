@@ -10,7 +10,6 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://rrreeeyyy.com',
-  base: '/rrreeeyyy.com/',
   integrations: [mdx(), sitemap(), tailwind(), react()],
   vite: {
     plugins: [yaml()]
