@@ -28,7 +28,7 @@ const RecentlyScrobbled = () => {
         <a href={track.url} target="_blank">
           <div>
             {track.name} by {track.artist["#text"]} (
-            {dayjs().to(dayjs.unix(track.date.uts))} )
+            {dayjs().to(dayjs.unix(track.date.uts))})
           </div>
         </a>
       </li>
