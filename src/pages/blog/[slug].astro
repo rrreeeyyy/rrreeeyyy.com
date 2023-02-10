@@ -4,7 +4,9 @@ import { BlogSchema } from "../../content/config";
 import PostLayout from "../../layouts/PostLayout.astro";
 
 export async function getStaticPaths() {
-    const postEntries = await getCollection("blog");
+    const postEntries = await getCollection("blog", ({ id }) => {
+        return !id.includes("/");
+    });
     return postEntries.map((entry) => ({
         params: { slug: entry.slug },
         props: { entry },

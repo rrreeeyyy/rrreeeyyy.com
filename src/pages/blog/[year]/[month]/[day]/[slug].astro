@@ -4,13 +4,15 @@ import { BlogSchema } from "../../../../../content/config";
 import PostLayout from "../../../../../layouts/PostLayout.astro";
 
 export async function getStaticPaths() {
-  const postEntries = await getCollection("blog");
+  const postEntries = await getCollection("blog", ({ id }) => {
+    return id.includes("/");
+  });
   return postEntries.map((entry) => ({
     params: {
-      year: entry.slug.split("/")[0],
-      month: entry.slug.split("/")[1],
-      day: entry.slug.split("/")[2],
-      slug: entry.slug.split("/")[3],
+      year: String(entry.slug.split("/")[0]),
+      month: String(entry.slug.split("/")[1]),
+      day: String(entry.slug.split("/")[2]),
+      slug: String(entry.slug.split("/")[3]),
     },
     props: { entry },
   }));
