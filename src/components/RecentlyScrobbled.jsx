@@ -17,7 +17,6 @@ const RecentlyScrobbled = () => {
   useEffect(() => {
     const getTracks = async () => {
       const res = await fetch(endpoint).then((res) => res.json());
-      console.log(res);
       setTracks(res.recenttracks.track);
     };
     getTracks();
