@@ -1,0 +1,36 @@
+---
+import { CollectionEntry, getCollection } from "astro:content";
+import { BlogSchema } from "../../../../../content/config";
+import PostLayout from "../../../../../layouts/PostLayout.astro";
+
+export async function getStaticPaths() {
+  const postEntries = await getCollection("blog");
+  return postEntries.map((entry) => ({
+    params: {
+      year: entry.slug.split("/")[0],
+      month: entry.slug.split("/")[1],
+      day: entry.slug.split("/")[2],
+      slug: entry.slug.split("/")[3],
+    },
+    props: { entry },
+  }));
+}
+
+interface Props {
+  entry: CollectionEntry<"blog">;
+}
+
+const { entry } = Astro.props;
+const post: BlogSchema = entry.data;
+const { Content } = await entry.render();
+---
+
+<PostLayout
+  title={post.title}
+  description={post.description}
+  pubDate={post.pubDate}
+  heroImage={post.heroImage}
+  updatedDate={post.updatedDate}
+>
+  <Content />
+</PostLayout>
