@@ -2,9 +2,9 @@ import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import { useEffect, useState } from "react";
 
-dayjs.extend(relativeTime);
-
 const RecentlyScrobbled = () => {
+  dayjs.extend(relativeTime);
+
   const TRACK_LIMIT = 3;
   const LASTFM_USERNAME = import.meta.env.PUBLIC_LASTFM_USERNAME;
   const LASTFM_API_KEY = import.meta.env.PUBLIC_LASTFM_API_KEY;
