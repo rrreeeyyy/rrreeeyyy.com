@@ -26,6 +26,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@astrojs/partytown": "^1.0.3",
     "@rollup/plugin-yaml": "^4.0.1",
     "@tailwindcss/typography": "^0.5.7"
   }
