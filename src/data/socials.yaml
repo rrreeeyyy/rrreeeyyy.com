@@ -11,3 +11,6 @@
 - name: Last.fm
   id: "@rrreeeyyy117"
   url: https://www.last.fm/user/rrreeeyyy117
+- name: Mastodon
+  id: "@rrreeeyyy@mastodon.cloud"
+  url: https://mastodon.cloud/@rrreeeyyy
