@@ -1,4 +1,11 @@
 ---
+export interface Props {
+  title: string;
+  link?: string;
+  desc?: string;
+  subtitle?: string;
+}
+
 const { title, subtitle, desc, link } = Astro.props;
 ---
 
@@ -12,11 +19,20 @@ const { title, subtitle, desc, link } = Astro.props;
   <div class="experience__data bd-grid px-5">
     {
       link ? (
-        <h3 class="font-semibold mb-1">
-          <a href={link} target="_blank" class="underline">
-            {title}
-          </a>
-        </h3>
+        title.includes("@") ? (
+          <h3 class="font-semibold mb-1">
+            {title.split("@")[0]} @{" "}
+            <a href={link} target="_blank" class="underline">
+              {title.split("@")[1]}
+            </a>
+          </h3>
+        ) : (
+          <h3 class="font-semibold mb-1">
+            <a href={link} target="_blank" class="underline">
+              {title}
+            </a>
+          </h3>
+        )
       ) : (
         <h3 class="font-semibold mb-1">{title}</h3>
       )
