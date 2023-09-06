@@ -14,3 +14,6 @@
 - name: Mastodon
   id: "@rrreeeyyy@mastodon.cloud"
   url: https://mastodon.cloud/@rrreeeyyy
+- name: Bluesky
+  id: "@rrreeeyyy.bsky.social"
+  url: https://bsky.app/profile/rrreeeyyy.bsky.social
